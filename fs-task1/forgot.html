@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+        .pass_show{position: relative} 
+    
+    .pass_show .ptxt { 
+    
+    position: absolute; 
+    
+    top: 50%; 
+    
+    right: 10px; 
+    
+    z-index: 1; 
+    
+    color: #f36c01; 
+    
+    margin-top: -10px; 
+    
+    cursor: pointer; 
+    
+    transition: .3s ease all; 
+    
+    } 
+    
+    .pass_show .ptxt:hover{color: #333333;} 
+    
+    </style>
+</head>
+
+<body>
+   
+    <div class="container">
+
+        <div class="row mt-5">
+            <div class="col-md-4 col-md-offset-4  mx-auto ">
+		       <label>New Password</label>
+            
+            <div class="form-group pass_show"> 
+                <input type="password" value="faisal.khan@123" class="form-control" placeholder="New Password"> 
+            </div> 
+		       <label>Confirm Password</label>
+            <div class="form-group pass_show"> 
+                <input type="password" value="faisal.khan@123" class="form-control" placeholder="Confirm Password"> 
+            </div> 
+            <a href="SIGNIN.HTML"><button class="btn btn-primary btn-block">Reset Password</button></a>
+            </div>
+		</div>  
+	</div>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+      
+$(document).ready(function(){
+$('.pass_show').append('<span class="ptxt">Show</span>');  
+});
+  
+
+$(document).on('click','.pass_show .ptxt', function(){ 
+
+$(this).text($(this).text() == "Show" ? "Hide" : "Show"); 
+
+$(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
+
+});  
+</script>
+</body>
+</html>
