@@ -1,0 +1,71 @@
+.cont{
+    background-color:#E5E5E5;
+    height: 85vh;
+    width: 95%;
+    margin-top: 3%;
+    margin-left: 2.5%;
+    padding-top: 2.5%;
+    
+}
+.box{
+    height: 75vh;
+    background-color:rgb(255, 255, 255) ;
+    width: 22%;
+    display: inline-block;
+    margin-left: 2%;
+    border-radius: 3%;
+    justify-content: center;
+    padding-top: 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900 !important;
+}
+.dollar{
+    display: inline-block;
+}
+.ruler{
+    height: 1px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    margin-left: 10%;
+    margin-top: 4%;
+}
+#btn{
+    background-color:rgb(255, 32, 2);
+    color: rgb(255, 255, 255);
+    margin-left: 25%;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.buy{
+    display: inline;
+    font-size: medium;
+}
+.box:nth-child(3){
+    background-color: rgb(255, 30, 0);
+    color: rgb(255, 255, 255);
+}
+.ruler-3{
+    color: white;
+    background-color: white;
+    font-weight: 900!important;
+    height: 1px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+#btn-3{
+    background-color:rgb(255, 255, 255);
+    color: rgb(255, 30, 0);
+    margin-left: 25%;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 50px;
+}
